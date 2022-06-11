@@ -16,7 +16,7 @@ int main(void)
 
 	while (i < 26)
 	{
-		if ((i == 4) | (i == 15))
+		if ((i == 4) | (i == 16))
 		{
 			i++;
 		}
