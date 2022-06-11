@@ -23,8 +23,8 @@ int main(void)
 		else
 		{
 			putchar(letter + i);
+			i++;
 		}
-		i++;
 	}
 	putchar('\n');
 	return (0);
