@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include "main.h"
 
+/* function: prints out alphabet */
+
 void print_alphabet(void)
 {
 	int i;
