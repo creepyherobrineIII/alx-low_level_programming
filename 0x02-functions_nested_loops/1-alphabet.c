@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include "1-main.h"
+
 /**
- * main - Output the alphabet using a function
+ * main - Output alphabet using function in seperate files
  *
  * Return: Always 0
  */
