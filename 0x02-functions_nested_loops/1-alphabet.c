@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include "main.h"
 
-/* function: prints out alphabet */
+/**
+ * print_alphabet - prints out alphabet using header files
+ */
 
 void print_alphabet(void)
 {
