@@ -1,9 +1,10 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
- * main - Print the alphabet using functions
+ * main - Output the alphabet using a function
  *
- * Return: Always 0 (Success)
+ * Return: Always 0
  */
 
 int main(void)
