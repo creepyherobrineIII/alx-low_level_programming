@@ -20,7 +20,7 @@ int main(void)
 
 	i = 0;
 
-	while (i < 7)
+	while (i < 6)
 	{
 		putchar('a' + i);
 		i++;
