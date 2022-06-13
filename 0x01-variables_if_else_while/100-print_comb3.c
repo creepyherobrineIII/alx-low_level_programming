@@ -36,6 +36,6 @@ int main(void)
 		g = i + 1;
 		i++;
 	}
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }
