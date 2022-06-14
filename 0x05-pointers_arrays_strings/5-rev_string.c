@@ -9,9 +9,8 @@
 void rev_string(char *s)
 {
 	int len, arrlen, i;
-	char g, r;
+	char r, g;
 
-	g = '\0';
 	len = 0;
 	i = 0;
 
@@ -23,21 +22,15 @@ void rev_string(char *s)
 
 	len = len - 2;
 	arrlen = len;
-
-	char rev[len];
-
-	while (len >= 0)
-	{
-		rev[i] = *(s + len);
-		i++;
-		len--;
-	}
-
 	i = 0;
 
 	while (i <= arrlen)
 	{
-		*(s + i) = rev[i];
+		r = *(s + len);
+		g = *(s + i);
+		*(s + len) = g;
+		*(s + i) = r;
 		i++;
+		len--;
 	}
 }
