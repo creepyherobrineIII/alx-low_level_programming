@@ -23,7 +23,7 @@ void rev_string(char *s)
 	len = len - 2;
 	i = 0;
 
-	while (i != len)
+	while (i <= len)
 	{
 		r = *(s + len);
 		g = *(s + i);
