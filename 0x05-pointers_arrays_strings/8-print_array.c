@@ -21,6 +21,8 @@ void print_array(int *a, int n)
 	{
 		out = *(a + i);
 		_putchar(out);
+		_putchar(',');
+		_putchar(' ');
 		i++;
 	}
 	_putchar(nl);
