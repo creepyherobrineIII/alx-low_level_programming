@@ -21,16 +21,16 @@ void puts_half(char *str)
 		len++;
 	}
 
-	len --;
+	len--;
 
 	if ((len % 2) == 1)
 	{
 		len--;
 		half_len = (len / 2);
+		half_len++;
 	} else
 		half_len = (len / 2);
 
-	half_len++;
 
 	while (half_len <= len)
 	{
