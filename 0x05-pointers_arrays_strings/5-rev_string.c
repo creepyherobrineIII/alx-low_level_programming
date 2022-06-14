@@ -8,7 +8,7 @@
 
 void rev_string(char *s)
 {
-	int len, arrlen, i;
+	int len, i;
 	char r, g;
 
 	len = 0;
@@ -21,10 +21,9 @@ void rev_string(char *s)
 	}
 
 	len = len - 2;
-	arrlen = len;
 	i = 0;
 
-	while (i <= arrlen)
+	while (i != len)
 	{
 		r = *(s + len);
 		g = *(s + i);
