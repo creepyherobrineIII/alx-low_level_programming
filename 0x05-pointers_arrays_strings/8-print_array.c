@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -10,8 +11,8 @@
 
 void print_array(int *a, int n)
 {
-	int i;
-	char out, nl;
+	int i, out;
+	char nl;
 
 	out = '\0';
 	nl = '\n';
@@ -20,7 +21,7 @@ void print_array(int *a, int n)
 	while (i < n)
 	{
 		out = *(a + i);
-		_putchar(out);
+		printf("%i", out);
 		_putchar(',');
 		_putchar(' ');
 		i++;
