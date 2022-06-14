@@ -1,7 +1,5 @@
 #include "main.h"
 
-int _strlen(char *s);
-
 /**
  * _puts - prints string to standard out
  *
@@ -12,12 +10,20 @@ void _puts(char *str)
 {
 	int len;
 	int i;
-	char g,n;
+	char g,n,r;
 
 	g = '\0';
 	n = '\n';
-	len = _strlen(str);
+	len = 0;
 	i = 0;
+
+	while (r != '\0')
+	{
+		r = *(str + len);
+		len++;
+	}
+
+	len = len - 1;
 
 	while (i <= len)
 	{
