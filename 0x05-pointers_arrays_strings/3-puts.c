@@ -10,14 +10,18 @@ void _puts(char *str)
 {
 	int len;
 	int i;
+	char g,n;
 
-
+	g = '';
+	n = '\n';
 	len = _strlen(str);
 	i = 0;
 
 	while (i <= len)
 	{
-		_putchar();
+		g = *(str + i);
+		_putchar(g);
+		i++;
 	}
-	_putchar();
+	_putchar(n);
 }	
