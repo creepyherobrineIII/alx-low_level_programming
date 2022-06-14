@@ -29,6 +29,8 @@ void puts_half(char *str)
 		half_len = (len / 2);
 	}
 
+	len--;
+
 	while (half_len < len)
 	{
 		g = *(str + half_len);
