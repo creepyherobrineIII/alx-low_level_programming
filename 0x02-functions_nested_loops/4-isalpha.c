@@ -11,14 +11,18 @@
 
 int _isalpha(int c)
 {
+	int i;
+
 	if ((c < 65) | (c > 90))
 	{
-		if ((c > 90) & (c < 97) | (c > 122))
+		if (((c > 90) & (c < 97)) | (c > 122))
 		{
-			return (0);
+			i = 0;
 		} else
 		{
-			return (1);
+			i = 1;
 		}
 	}
+
+	return (i);
 }
