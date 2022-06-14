@@ -2,9 +2,9 @@
 
 
 /**
- * strcpy - copies string from one pointer to another
+ * _strcpy - copies string from one pointer to another
  *
- * @dest: destination pointer parameter 
+ * @dest: destination pointer parameter
  *
  * @src: string to be coppied pointer parameter
  *
