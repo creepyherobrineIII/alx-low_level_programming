@@ -21,9 +21,9 @@ void print_rev(char *s)
 		len++;
 	}
 
-	len = len - 1;
+	len = len - 2;
 
-	while (len > 0)
+	while (len >= 0)
 	{
 		g = *(s + len);
 		_putchar(g);
