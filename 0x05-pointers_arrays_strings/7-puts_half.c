@@ -9,9 +9,10 @@
 void puts_half(char *str)
 {
 	int len, half_len;
-	char g, r;
+	char g, n, r;
 
 	g = '\0';
+	n = '\n';
 	len = 0;
 
 	while (r != '\0')
@@ -34,5 +35,5 @@ void puts_half(char *str)
 		_putchar(g);
 		half_len++;
 	}
-	_putchar('\n');
+	_putchar(n);
 }
