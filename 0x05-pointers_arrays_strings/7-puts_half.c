@@ -25,12 +25,11 @@ void puts_half(char *str)
 
 	if ((len % 2) == 1)
 	{
-		len--;
-		half_len = (len / 2);
-		half_len++;
+		half_len = ((len - 1) / 2);
 	} else
+	{
 		half_len = (len / 2);
-
+	}
 
 	while (half_len <= len)
 	{
@@ -38,5 +37,6 @@ void puts_half(char *str)
 		_putchar(g);
 		half_len++;
 	}
+
 	_putchar(n);
 }
