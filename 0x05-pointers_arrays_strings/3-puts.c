@@ -12,7 +12,7 @@ void _puts(char *str)
 	int i;
 	char g,n;
 
-	g = '';
+	g = '\0';
 	n = '\n';
 	len = _strlen(str);
 	i = 0;
