@@ -14,7 +14,7 @@ void print_array(int *a, int n)
 	int i, out;
 	char nl;
 
-	out = '\0';
+	out = 0;
 	nl = '\n';
 	i = 0;
 
