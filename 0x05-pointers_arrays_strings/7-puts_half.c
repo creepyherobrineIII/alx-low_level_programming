@@ -21,7 +21,7 @@ void puts_half(char *str)
 		len++;
 	}
 
-	len -= 2;
+	len --;
 
 	if ((len % 2) == 1)
 	{
@@ -29,6 +29,8 @@ void puts_half(char *str)
 		half_len = (len / 2);
 	} else
 		half_len = (len / 2);
+
+	half_len++;
 
 	while (half_len <= len)
 	{
