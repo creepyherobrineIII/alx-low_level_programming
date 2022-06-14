@@ -21,9 +21,7 @@ void print_array(int *a, int n)
 	while (i < n)
 	{
 		out = *(a + i);
-		printf("%i", out);
-		_putchar(',');
-		_putchar(' ');
+		printf("%i, ", out);
 		i++;
 	}
 	_putchar(nl);
