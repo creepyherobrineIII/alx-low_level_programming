@@ -12,7 +12,7 @@
 int _isalpha(int c)
 {
 	int i;
-	
+
 	i = 0;
 
 	if ((c > 64) && (c < 91))
