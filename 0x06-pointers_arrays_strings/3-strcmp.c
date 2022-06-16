@@ -1,6 +1,6 @@
 #include "main.h"
 
-/** 
+/**
  * _strcmp - compares string and returns relevent value
  *
  * @s1: string parameter for comparison
@@ -15,6 +15,8 @@ int _strcmp(char *s1, char *s2)
 
 	out = 0;
 	i = 0;
+	len1 = 0;
+	len2 = 0;
 
 	while (*(s1 + i) != '\0')
 	{
@@ -27,17 +29,23 @@ int _strcmp(char *s1, char *s2)
 	while (*(s2 + i) != '\0')
 	{
 		len2++;
-		i++;                                                  
+		i++;
 	}
 
 	if (len2 == len1)
+	{
 		out = 0;
+	}
 
 	if (len2 > len1)
+	{
 		out = -21;
+	}
 
 	if (len2 < len1)
+	{
 		out = 21;
+	}
 
 	return (out);
 }
