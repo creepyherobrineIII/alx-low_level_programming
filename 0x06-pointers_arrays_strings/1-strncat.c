@@ -23,16 +23,30 @@ char *_strncat(char *dest, char *src, int n)
 		destlen++;
 	}
 
-	while (i < n)
+	while (*(src + srclen) != '\0')
 	{
-		*(dest + destlen) = *(src + i);
-		i++;
 		srclen++;
-		destlen++;
+	}
+
+	if (srclen >= n)
+	{
+		while (i < n)
+		{
+			*(dest + destlen) = *(src + i);
+			destlen++;
+			i++;
+		}
 	}
 
 	if (srclen < n)
 	{
+		while (i < srclen)
+		{
+			*(dest + destlen) = *(src + i);
+			destlen++;
+			i++;
+		}
+
 		*(dest + destlen) = '\0';
 	}
 
