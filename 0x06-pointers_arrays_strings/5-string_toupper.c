@@ -15,9 +15,9 @@ char *string_toupper(char *str)
 
 	i = 0;
 
-	while (*(str + i) != '\0')
+	while (str[i] != '\0')
 	{
-		g = *(str + i);
+		g = str[i];
 
 		if ((g >= 97) && (g <= 122))
 		{
@@ -27,11 +27,11 @@ char *string_toupper(char *str)
 			i++;
 		}
 
-		*(str + i) = g;
+		str[i] = g;
 		i++;
 	}
 
 	i--;
 
-	*(str + i) = '\0';
+	str[i] = '\0';
 }
