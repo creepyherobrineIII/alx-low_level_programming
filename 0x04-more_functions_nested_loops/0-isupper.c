@@ -3,7 +3,9 @@
 /**
  * _isupper - checks if a letter is uppercase
  *
- * return: 0 (lowercase or no letter), 1 (uppercase letter)
+ * @c: integer parameter
+ *
+ * Return: 0 (lowercase or no letter), 1 (uppercase letter)
  */
 
 int _isupper(int c)
@@ -15,7 +17,7 @@ int _isupper(int c)
 	if ((c >= 65) &&  (c <= 90))
 	{
 		upper = 1;
-	} else 
+	} else
 	{
 		upper = 0;
 	}
