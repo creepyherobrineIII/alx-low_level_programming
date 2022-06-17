@@ -22,16 +22,15 @@ char *string_toupper(char *str)
 		if ((g >= 97) && (g <= 122))
 		{
 			g = g - 32;
+			str[i] = g;
+			i++;
 		} else
 		{
 			i++;
 		}
-
-		str[i] = g;
-		i++;
 	}
 
-	i--;
-
 	str[i] = '\0';
+
+	return (str);
 }
