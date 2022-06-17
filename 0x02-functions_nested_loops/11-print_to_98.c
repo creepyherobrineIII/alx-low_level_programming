@@ -9,6 +9,10 @@
 
 void print_to_98(int n)
 {
+	int u;
+
+	u = n;
+
 	if (n == 98)
 	{
 		printf("%i", n);
@@ -20,16 +24,14 @@ void print_to_98(int n)
 		{
 			if (n == 98)
 			{
-				printf("%i", n);
+				printf("%i", u);
 			} else
 			{
-				printf("%i, ", n);
+				printf("%i, ", u);
 			}
-			n++;
+			u++;
 		}
 	}
-
-	n--;
 
 	if (n > 98)
 	{
