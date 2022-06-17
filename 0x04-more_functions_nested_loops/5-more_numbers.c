@@ -23,6 +23,8 @@ void more_numbers(void)
 		{
 			_putchar('0' + icount);
 		}
+
+		icount++;
 	}
 	_putchar('\n');
 }
