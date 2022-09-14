@@ -18,7 +18,7 @@ void jack_bauer(void)
 		hs = 0;
 		if (hf < 2)
 		{
-			while (hs < 9)
+			while (hs <= 9)
 			{
 				mf = 0;
 				while (mf <= 5)
