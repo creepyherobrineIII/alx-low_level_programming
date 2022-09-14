@@ -21,6 +21,8 @@ while (m1 <= 9)
 			_putchar('0' + m1);
 			_putchar('0' + (res % 10));
 		}
+		else
+			_putchar('0' + res);
 
 		if (m2 == 9)
 		{
