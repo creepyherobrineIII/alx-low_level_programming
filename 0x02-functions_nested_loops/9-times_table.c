@@ -16,24 +16,25 @@ while (m1 <= 9)
 	while (m2 <= 9)
 	{
 		res = m1 * m2;
-		if (res > 10)
+		if (res >= 10)
 		{
 			_putchar('0' + m1);
 			_putchar('0' + (res % 10));
+			_putchar(',');
+			_putchar(' ');
 		}
 		else
+		{
 			_putchar('0' + res);
+			_putchar(',');
+			_putchar(' ');
+		}
 
 		if (m2 == 9)
 		{
 			_putchar('\n');
 		}
-		else
-		{
-			_putchar(',');
-			_putchar(' ');
-			_putchar(' ');
-		}
+
 		m2++;
 	}
 	m1++;
