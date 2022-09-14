@@ -16,7 +16,7 @@ while (m1 <= 9)
 	while (m2 <= 9)
 	{
 		res = m1 * m2;
-		if (m2 == 0)
+		if ((m2 == 0) && (res == 0))
 		{
 			_putchar('0' + res);
 		}
