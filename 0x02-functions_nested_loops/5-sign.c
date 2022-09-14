@@ -9,21 +9,24 @@
 
 int print_sign(int n)
 {
+int rs; 
 if (n > 0)
 {
 	_putchar('+');
-	return (1);
+	rs = 1;
 }
 
 if (n == 0)
 {
 	_putchar('0');
-	return (0);
+	rs = 0;
 }
 
 if (n < 0)
 {
 	_putchar('-');
-	return (-1);
+	rs = -1;
 }
+
+return (rs);
 }
