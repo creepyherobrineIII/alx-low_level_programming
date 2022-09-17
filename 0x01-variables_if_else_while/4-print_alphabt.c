@@ -14,7 +14,7 @@ int main(void)
 	{
 		if ((n == 4) || (n == 16))
 		{
-			n++
+			n++;
 		}
 		else
 		{
