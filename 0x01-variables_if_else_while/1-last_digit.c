@@ -1,10 +1,13 @@
 #include <stdlib.h>
 #include <time.h>
 #include <math.h>
+#include <stdio.h>
+
 /**
  * main - prints last digit of a number
  * Return: Always 0(Success)
  */
+
 int main(void)
 {
 	int n;
