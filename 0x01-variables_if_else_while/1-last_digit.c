@@ -1,6 +1,5 @@
 #include <stdlib.h>
 #include <time.h>
-#include <math.h>
 #include <stdio.h>
 
 /**
@@ -15,7 +14,7 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	last_dig = abs(n % 10);
+	last_dig = n % 10;
 
 	if ((last_dig < 6) && (last_dig != 0))
 	{
