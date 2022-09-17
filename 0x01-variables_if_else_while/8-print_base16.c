@@ -19,7 +19,7 @@ int main(void)
 
 	while (n < 6)
 	{
-		putchar('a'+ n);
+		putchar('a' + n);
 		n++;
 	}
 
