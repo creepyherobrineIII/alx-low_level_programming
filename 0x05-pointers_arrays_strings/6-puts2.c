@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * _puts - Outputs string to standard out
+ * puts2 - Outputs every second character in string
  * @str: char pointer
  * Return: void
  */
 
-void _puts(char *str)
+void puts2(char *str)
 {
 	int c = 0;
 
