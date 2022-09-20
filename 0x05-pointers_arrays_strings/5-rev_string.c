@@ -12,7 +12,7 @@ void print_rev(char *s)
 	int arrlen = 0;
 	char *str;
 
-	str = '  ';
+	str = ' ';
 	while (s[c] != '\0')
 	{
 		c++;
