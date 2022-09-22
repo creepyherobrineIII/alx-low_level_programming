@@ -21,4 +21,6 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 		dest[g] = '\0';
 	}
+
+	return (dest);
 }
