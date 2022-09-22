@@ -6,9 +6,10 @@
  * Return: void
  */
 
-void print_rev(char *s)
+void rev_string(char *s)
 {
 	int c = 0;
+	int halfc;
 	int i = 0;
 	char r, g;
 
@@ -18,7 +19,7 @@ void print_rev(char *s)
 	}
 	c--;
 
-	int halfc = c / 2;
+	halfc = c / 2;
 
 	while (c >= halfc)
 	{
