@@ -13,18 +13,15 @@ char *string_toupper(char *s)
 
 	while (s[c] != '\0')
 	{
-		c++;
-	}
-
-	for (int i = 0; i < c; i++)
-	{
-		temp = s[i];
+		temp = s[c];
 
 		if ((temp > 96) && (temp < 123))
 		{
 			temp = temp - 32;
-			s[i] = temp;
+			s[c] = temp;
 		}
+		c++;
 	}
+
 	return (s);
 }
