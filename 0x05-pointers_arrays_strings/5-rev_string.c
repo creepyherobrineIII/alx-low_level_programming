@@ -8,27 +8,25 @@
 
 void print_rev(char *s)
 {
-	int c,i = 0;
-	int arrlen = 0;
-	char str[sizeof(s)];
+	int c = 0;
+	int i = 0;
+	char r, g;
 
 	while (s[c] != '\0')
 	{
 		c++;
 	}
-
 	c--;
-	arrlen = c;
 
-	while (c >= 0)
+	int halfc = c / 2;
+
+	while (c >= halfc)
 	{
-		str[i] = s[c];
+		r = s[c];
+		g = s[i];
+		s[c] = g;
+		s[i] = r;
 		c--;
 		i++;
-	}
-	
-	while (c <= arrlen)
-	{
-		s[c] = str[c];
 	}
 }
