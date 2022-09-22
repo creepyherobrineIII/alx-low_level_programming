@@ -12,7 +12,7 @@ void reverse_array(int *a, int n)
 	int halfarrlen;
 	int temp = 0;
 	int l, i = 0;
-	
+
 	n--;
 
 	halfarrlen = n / 2;
