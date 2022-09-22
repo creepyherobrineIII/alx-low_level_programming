@@ -20,7 +20,6 @@ while (m1 <= 9)
 		{
 			_putchar('0' + res);
 		}
-
 		if (res >= 10)
 		{
 			_putchar(',');
@@ -30,13 +29,10 @@ while (m1 <= 9)
 		}
 		else
 		{
-			if ((res > 0) && (res < 10))
-			{
-				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
-				_putchar('0' + res);
-			}
+			_putchar(',');
+			_putchar(' ');
+			_putchar(' ');
+			_putchar('0' + res);
 		}
 		if (m2 == 9)
 		{

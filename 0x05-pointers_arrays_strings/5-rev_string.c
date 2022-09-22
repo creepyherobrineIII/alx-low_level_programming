@@ -10,9 +10,8 @@ void print_rev(char *s)
 {
 	int c,i = 0;
 	int arrlen = 0;
-	char *str;
+	char str[sizeof(s)];
 
-	str = ' ';
 	while (s[c] != '\0')
 	{
 		c++;
