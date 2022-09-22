@@ -9,7 +9,9 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int c, g = 0;
+	int c = 0;
+	int l = 0;
+	int g = 0;
 	char temp;
 
 	while (dest[c] != '\0')
@@ -17,27 +19,19 @@ char *_strcat(char *dest, char *src)
 		c++;
 	}
 
-	while (src[g] != '\0')
+	while (src[l] != '\0')
 	{
-		g++;
+		l++;
 	}
 
-	if (n <= g)
+	while (g < l)
 	{
-		for (int i = 0; i < n; i++)
-		{
-			temp = src[i];
-			dest[c] = temp;
-			c++;
-		}
+		temp = src[g];
+		dest[c] = temp;
+		c++;
+		g++;
 	}
-	else
-	{
-		for (int r = 0; r < g; r++)
-		{
-			temp = src[r];
-			dest[c] = temp;
-			c++;
-		}
-	}
+	dest[c] = '\0';
+
 	return (dest);
+}
