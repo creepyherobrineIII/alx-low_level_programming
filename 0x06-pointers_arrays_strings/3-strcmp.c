@@ -7,7 +7,7 @@
  * Return: 0 (Equal strings), -int(s1 < s2), +int(s1 > s2)
  */
 
-int _strcmp(char *s1, char *s1)
+int _strcmp(char *s1, char *s2)
 {
 	int ret;
 
@@ -18,7 +18,7 @@ int _strcmp(char *s1, char *s1)
 
 	if (s1[0] > s2[0])
 	{
-		ret = s1[0] - s2[0]
+		ret = s1[0] - s2[0];
 	}
 
 	if (s1[0] < s2[0])
